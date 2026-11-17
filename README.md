@@ -34,6 +34,12 @@ British Airways collected passenger reviews covering seat comfort, cabin crew, f
 - **Business travellers are the least satisfied: only 25% recommend BA**, against 55% for solo leisure travellers. This is a priority segment because it is also the most valuable.
 - Cabin crew is the strongest asset (3.3/5) and should be protected in any cost-cutting decision.
 
+## Dashboard
+
+<img src="tableau_british_airways.png" alt="British Airways customer reviews dashboard in Tableau" width="800">
+
+The dashboard shows the average of each score at the top, then the trend over time, a world map by country and a comparison by aircraft (average rating and number of reviews). A parameter lets the user switch the metric (rating, seat comfort, cabin crew, food, ground service, value, entertainment), and filters apply to seat class, traveller type, continent, aircraft and month.
+
 ## Skills demonstrated
 
 Tableau · data preparation in Excel · data joins · maps · time series · interactive filters · customer analytics
