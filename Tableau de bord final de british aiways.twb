@@ -1987,7 +1987,7 @@
             <column caption='Rapport Qualité/Prix' datatype='integer' name='[rapport qualité/prix]' role='measure' type='quantitative' />
             <column caption='Service Au Sol' datatype='integer' name='[service_au_sol]' role='measure' type='quantitative' />
             <column caption='Service Personnel De Cabine' datatype='integer' name='[service_personnel_de_cabine]' role='measure' type='quantitative' />
-            <column-instance column='[Calculation_0551713100111875]' derivation='Sum' name='[sum:Calculation_0551713100111875:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0551713100111875]' derivation='Avg' name='[avg:Calculation_0551713100111875:qk]' pivot='key' type='quantitative' />
             <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
             <column caption='Type De Siège' datatype='string' name='[type_de_siège]' role='dimension' type='nominal' />
             <column caption='Type De Voyageur' datatype='string' name='[type_de_voyageur]' role='dimension' type='nominal' />
@@ -2004,7 +2004,7 @@
         <style>
           <style-rule element='axis'>
             <format attr='title' class='0' field='[federated.1brlla40nc2scg0zyb2iy1p965lx].[tmn:date:qk]' scope='cols' value='' />
-            <format attr='title' class='0' field='[federated.1brlla40nc2scg0zyb2iy1p965lx].[sum:Calculation_0551713100111875:qk]' scope='rows' value='' />
+            <format attr='title' class='0' field='[federated.1brlla40nc2scg0zyb2iy1p965lx].[avg:Calculation_0551713100111875:qk]' scope='rows' value='' />
             <format attr='height' field='[federated.1brlla40nc2scg0zyb2iy1p965lx].[tmn:date:qk]' value='33' />
           </style-rule>
           <style-rule element='header'>
@@ -2030,7 +2030,7 @@
             </style>
           </pane>
         </panes>
-        <rows>[federated.1brlla40nc2scg0zyb2iy1p965lx].[sum:Calculation_0551713100111875:qk]</rows>
+        <rows>[federated.1brlla40nc2scg0zyb2iy1p965lx].[avg:Calculation_0551713100111875:qk]</rows>
         <cols>[federated.1brlla40nc2scg0zyb2iy1p965lx].[tmn:date:qk]</cols>
       </table>
       <simple-id uuid='{67C25A00-2C0B-467E-853A-157FFD9AB5A9}' />
